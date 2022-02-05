@@ -1,0 +1,99 @@
+CI/CD - continuous integration continuous deployment
+DevOps is a practice that allows a single team to manage the entire app dev life cycle (dev, testing, deployment, monitoring)
+
+What does devops do?
+Improves collaboragion and productivity by:
+- automating infra, workflows
+- continuously measuring app performance
+
+Benefits of DevOps
+- Cost avoidance
+- Accelerated Innovation
+- Flexibility
+- Agility and Speed
+- IT efficiency
+
+DevOps Stages:
+- Version Control/SCM
+- Continuous Testing    (junit, selenium integrate in jenkins)
+- Continuous Deployment (Container Virtualization, Configuration Management)
+- Continuous Monitoring
+
+Version Control/Source Code Management
+    - Decentralized Version Control
+    - Centralized Version Control - so one user does not overlap the other users changes (proper communication with all users - check in / check out)
+    
+Continuous Integration - Jenkins; can be quickly tested, compiled and issues sent back to dev quickly
+    
+Containerization
+
+Configuration Mgmt - Puppet and Ansible and chef
+
+Continuous Monitoring - nagios, promethius grafana, splunk
+'
+DevOps Delivery Pipeline
+  - version control -> build -> unit test -> deploy -> Auto test -> deploy to production -> measure and validate
+  
+Why need version control?
+- helps teams to solve these kinds of problems, by tracking every indiv change by each contributor and helps prevent concurrent work from conflicting
+- supports a developers preferred workflow without imposing one way of working
+
+Issues without version control
+- once saved, all the changes made in the files are permanent and cannot be reverted back
+- no record of what was done and by whom
+- downtime that can occur because of a faulty update could cost millions in losses
+
+Version Control - manage code and version of the code; keeps track of all versions
+
+Version Control Types:
+- LVC local version control
+    - has the version database in the local pc
+    - local db keeps a record of the changes made to files in versino database
+- local version control:  issue
+    - issue:  multiple people parallely working on the same project
+    - solution:  centralized version control
+
+- Centralized Version Control (CVC)
+     - Local version control's issues are resolved by centralized version control
+     - in cvc, a central repository is maintained where all the versioned files are kept
+     - now users can checkout, and check-in files from their different computers at any time
+- CVC Issue:
+     - in case of central server failure the whole system goes down
+     - Solution:  Distributed Version Control
+ - Distributed Version Control
+      - Version Database is stored at user's local system and at teh remote server
+      - Users maniputlate the local files and then upload the changes to the remote server
+      - if any of the servers break, a client server can be used to restore
+  
+  - Differnce between svn and git?
+     - svn is a cvs (centralized) and outdated and git is a dvs is modern tool (dvs) git github gitlab bitbucket
+   
+  - INTERVIEW ? - How do you migrate from svn to git hub/git lab?  https://docs.microsoft.com/en-us/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops
+      - Prepare a migration environment
+       - Convert the source SVN repository to a local Git repository
+      - (Optional) Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
+      -Push the local Git repository to a remote Git repository hosted on Azure Repos
+      - Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on Azure Repos
+        - Developers switch to Git as main source control system
+  
+ Why Git?
+    - most companies use git in most countries; github is next
+    - limited set using gitlab (similar to github)
+
+Git is clear winner, why?
+  - runs on dvc
+  - integrity - check sum before storing ensures you cant make changes to anything w./o git recording the change
+  - robust - can do push can pull unlimite w/o any issue
+  - branching handling - working dir is in itself a branch; diff branches can be merged with ease
+  - fast operations - almost every operation in git is local, hence the speed offered by Git is lightening fast compared to other VCS
+  - Snapshots - git records changes made to a file rather than file itself.  That means if a file isnt changed, it isnt stored again
+ 
+What is Git?
+  - git is a disrtributed version control system which records changes made to the files laying emphasis on speed, data integrity and distibuted , non-linear workflows
+  
+
+
+
+
+
+
